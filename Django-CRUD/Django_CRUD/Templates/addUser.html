@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User || Django-CRUD</title>
+</head>
+<body>
+
+<form method="POST">
+    {% csrf_token %}
+    <input name="userName" type="text" placeholder="Enter your user name">
+    <input name="email" type="email" placeholder="Enter your email">
+    <input name="mobileNumber" type="text" placeholder="Enter your mobile number">
+    <textarea name="address" placeholder="Enter your address"></textarea>
+    <button type="submit">Submit</button> <button type="reset">Reset</button>
+</form>
+
+</body>
+</html>

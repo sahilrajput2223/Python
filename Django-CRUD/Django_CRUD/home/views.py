@@ -17,4 +17,5 @@ def addUserDetails(request):
 
 def allUser(request):
     temp = "showUser.html"
-    return render(request, temp)
+    data = models.User.objects.all()
+    return render(request, temp, {'data':data})
